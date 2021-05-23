@@ -19,6 +19,14 @@ class MainActivity : AppCompatActivity() {
             number = number + 1
             numberTextView.text = number. toString()
         }
+        numberTextView.text = "0"
+
+        minusButton.setOnClickListener {
+
+            number = number - 1
+            numberTextView.text = number.toString()
+
+        }
 
 
     }

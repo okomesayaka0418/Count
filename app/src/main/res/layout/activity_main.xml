@@ -26,4 +26,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/numberTextView" />
 
+    <Button
+        android:id="@+id/minusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="1dp"
+        android:text="MINUS"
+        app:layout_constraintEnd_toEndOf="@+id/plussButton"
+        app:layout_constraintTop_toBottomOf="@+id/plussButton" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
