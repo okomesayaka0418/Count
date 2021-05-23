@@ -1,5 +1,6 @@
 package app.yonezawa.yone.countday5
 
+import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
@@ -18,8 +19,14 @@ class MainActivity : AppCompatActivity() {
 
             number = number + 1
             numberTextView.text = number. toString()
+
+            if (number % 3 == 0) {
+                numberTextView.setTextColor(Color.GREEN)
+            }else {
+                numberTextView.setTextColor(Color.BLACK)
+            }
         }
-        numberTextView.text = "0"
+       numberTextView.text = "0"
 
         minusButton.setOnClickListener {
 
